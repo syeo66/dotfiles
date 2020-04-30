@@ -4,6 +4,7 @@
 .DS_Store?
 ehthumbs.db
 Thumbs.db
+/Icon?
 
 # VCS #
 #######
@@ -13,5 +14,9 @@ CVS
 
 .vscode
 .vscode/
+nbproject
+
+.sync
 
 .graphqlconfig
+devinfo.json
