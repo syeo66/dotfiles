@@ -17,4 +17,5 @@ export PATH=$HOME/bin:$HOME/.npm-packages/bin:$PATH
 export PATH=$PATH:/opt/local/lib/mariadb-10.2/bin
 
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
