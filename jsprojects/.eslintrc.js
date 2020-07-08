@@ -1,10 +1,10 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'prettier', 'simple-import-sort'],
+  plugins: ['@typescript-eslint', 'prettier', 'simple-import-sort', 'react-hooks'],
   extends: [
-    'react-app',
     'eslint:recommended',
+    'plugin:react/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
@@ -24,10 +24,12 @@ module.exports = {
     'prefer-destructuring': 'error',
     'prefer-template': 'error',
     'prettier/prettier': 'error',
+    'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
+    'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'simple-import-sort/sort': 'error',
-    // 'sort-imports': 'error',
     'sort-keys': 'error',
     'sort-vars': 'error',
+    // 'sort-imports': 'error',
     complexity: ['warn', 15],
     eqeqeq: 'error',
   },
